@@ -1,0 +1,9 @@
+#!/bin/sh
+cp /media/boot/boot.ini /media/boot/boot.ini.old
+cp /usr/share/bootini/boot.ini /media/boot/boot.ini
+
+
+echo
+echo
+echo "A new boot.ini is installed."
+echo "Any changes on your older bootini was replaced."
