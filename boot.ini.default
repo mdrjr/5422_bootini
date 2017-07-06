@@ -1,0 +1,34 @@
+[general]
+#This configuration is parsed by the bootini-persistence script
+#uncomment the section you want to override in boot.ini and set the desired value
+
+# For XU3 mac address
+#macaddr=00:1e:06:61:7a:39
+
+# HDMI Resolution, see boot.ini for options
+#videoconfig=drm_kms_helper.edid_firmware=edid/1920x1080.bin
+
+# HDMI Mode (hdmi/dvi)
+#vout=hdmi
+
+# HDMI Hot Plug Detection
+#HPD=true
+
+# Enable/Disable CEC
+#cecenable=false
+
+# VU7 Touchscreen
+#disable_vu7=false
+
+# CPU Governoor
+#governor=performance
+
+# LPDDR3 Frequency
+#ddr_freq=825
+
+# Watchdog
+#external_watchdog=false
+#external_watchdog_debounce=3
+
+# boot args
+#bootrootfs=console=tty1 console=ttySAC2,115200n8 root=UUID=e139ce78-9841-40fe-8823-96a304a09859 rootwait ro fsck.repair=yes net.ifnames=0
