@@ -1,7 +1,6 @@
 #!/bin/sh
 cp /media/boot/boot.ini /media/boot/boot.ini.old
 cp /usr/share/bootini/boot.ini /media/boot/boot.ini
-cp /usr/share/bootini/ondemand /etc/init.d/ondemand
 
 #copy the default settings file if it doesn't exist
 if [ ! -f "/media/boot/boot.ini.default" ]; then
