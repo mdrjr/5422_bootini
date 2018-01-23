@@ -1,0 +1,62 @@
+[general]
+#This configuration is parsed by the bootini-persistence script
+#uncomment the section you want to override in boot.ini and set the desired value
+
+#####################
+# XU4 configuration #
+#####################
+
+#XU4 initrd_high
+#initrd_high=0xffffffff
+
+#XU4 fdt_high
+#fdt_high=0xffffffff
+
+#XU4 macaddr
+#macaddr=00:1e:06:61:7a:39
+
+#boot parameters for XU4
+#bootrootfs=console=tty1 console=ttySAC2,115200n8 root=UUID=e139ce78-9841-40fe-8823-96a304a09859 rootwait ro fsck.repair=yes net.ifnames=0
+
+#XU4 manual resolution configuration
+#videoconfig=drm_kms_helper.edid_firmware=edid/640x480.bin
+
+#XU4 - set video out to hdmi or dvi
+#vout=hdmi
+
+#XU4 CEC - true/false
+#cecenable=false
+
+#XU4 governor
+#governor=performance
+
+#XU4 HPD - true/false
+#HPD=true
+
+#XU4 hdmi_tx_amp_lvl
+#hdmi_tx_amp_lvl=31
+
+#XU4 hdmi_tx_lvl_ch
+#hdmi_tx_lvl_ch0=3
+
+#XU4 hdmi_tx_lvl_ch
+#hdmi_tx_lvl_ch1=3
+
+#XU4 hdmi_tx_lvl_ch
+#hdmi_tx_lvl_ch2=3
+
+#XU4 hdmi_tx_emp_lvl
+#hdmi_tx_emp_lvl=6
+
+#XU4 hdmi_clk_amp_lvl
+#hdmi_clk_amp_lvl=31
+
+#XU4 hdmi_tx_res
+#hdmi_tx_res=0
+
+#XU4 hdmi_phy_control
+#hdmi_phy_control=hdmi_tx_amp_lvl=${hdmi_tx_amp_lvl} hdmi_tx_lvl_ch0=${hdmi_tx_lvl_ch0} hdmi_tx_lvl_ch1=${hdmi_tx_lvl_ch1} hdmi_tx_lvl_ch2=${hdmi_tx_lvl_ch2} hdmi_tx_emp_lvl=${hdmi_tx_emp_lvl} hdmi_clk_amp_lvl=${hdmi_clk_amp_lvl} hdmi_tx_res=${hdmi_tx_res} HPD=${HPD} vout=${vout}
+
+#XU4 bootargs
+#bootargs=${bootrootfs} ${videoconfig} smsc95xx.macaddr=${macaddr} governor=${governor} ${hdmi_phy_control}
+

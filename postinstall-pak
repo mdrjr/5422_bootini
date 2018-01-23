@@ -1,9 +1,19 @@
 #!/bin/sh
 cp /media/boot/boot.ini /media/boot/boot.ini.old
 cp /usr/share/bootini/boot.ini /media/boot/boot.ini
+#copy the default settings file if it doesn't exist
+if [ ! -f "/media/boot/boot.ini.default" ]; then
+   cp /usr/share/bootini/boot.ini.default /media/boot/boot.ini.default
+fi
+
+#copy over user's custom settings (if any) from boot.ini.default
+/usr/share/bootini/bootini-persistence.pl 2>&1 | tee /tmp/bootini-persistence.txt
+
 cp /usr/share/bootini/ondemand /etc/init.d/ondemand
 
 echo
 echo
 echo "A new boot.ini is installed."
-echo "Any changes on your older bootini was replaced."
+echo "Any changes to boot.ini is lost, such as display configuration"
+echo "Persistent custom settings from /media/boot/boot.ini.default have been restored"
+echo "For reference your old boot.ini is saved to /media/boot/boot.ini.old"
